@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  color: #1b1b1b;
+}
+
+.search-input {
+  width: 40%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.time {
+  background: #ffcc00;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.theme-icon {
+  font-size: 20px;
+}
+
+.welcome-section {
+  background: #052c50;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.welcome-section span {
+  color: #f27885;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-panel {
+  flex: 2;
+  text-align: center;
+}
+
+.middle-panel img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-panel {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.right-panel h3 {
+  margin-bottom: 15px;
+}
+
+.notification {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #052c50;
+  border-radius: 6px;
+}
+
+.notification small {
+  color: gray;
+  font-size: 12px;
+}
+
+.btn {
+  background: #052c50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background: #052c50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark header,
+body.dark .dashboard,
+body.dark footer,
+body.dark .right-panel,
+body.dark .notification {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+.theme-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.notification:hover {
+  background-color: #e3f2fd;
+}
+
+.btn:hover {
+  background-color: #004080;
+}
+
+button.dismiss-btn {
+  background: transparent;
+  border: none;
+  float: right;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+}
+
+button.dismiss-btn:hover {
+  color: red;
+}
+

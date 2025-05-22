@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WELCOME</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      flex-shrink: 0;
+    }
+
+    .compact-footer {
+      background: #1c1b36;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      padding: 20px 10px;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .footer-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-col {
+      flex: 1 1 180px;
+      min-width: 160px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      color: #bbb;
+      margin: 2px 0;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .footer-col ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin: 4px 0;
+    }
+
+    .footer-col ul li a:hover,
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .social-icons img {
+      width: 20px;
+      margin-right: 8px;
+      vertical-align: middle;
+      transition: 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .store-icons img {
+      height: 30px;
+      margin-top: 8px;
+      max-width: 100px;
+      display: inline-block;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+   
+    .main-content {
+      flex: 1; 
+      display: flex;
+      min-height: 0; 
+    }
+
+    .container {
+  display: flex;
+  height: 80vh; 
+  max-width: 900px; 
+  margin: 40px auto; 
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+.left-panel {
+  flex: 1; 
+  background: url('image/img1.jpg') no-repeat center center;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 250px; 
+}
+
+
+.login-box {
+  flex: 1; 
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: none;
+  width: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0051ff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-box button:hover {
+      background-color: #003bb3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">WELCOME TO HOLA9!</div>
+  </header>
+
+  <div class="main-content">
+    <div class="left-panel"></div>
+    <div class="container">
+      <div class="login-box">
+        <h2>LOGIN HERE</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 HOLA9 Classifieds private limited </p>
+  </footer>
+
+  <footer class="compact-footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Address</h4>
+        <p>#12, 2nd Floor, 3rd Cross<br />
+          Patel Narayana Reddy Layout<br />
+          6th Block, Koramangala<br />
+          Bengaluru - 560095</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@hola9.com">hello@hola9.com</a><br />
+          <strong>Call:</strong> <a href="tel:+919606451628">+91 96064 51628</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Listing</a></li>
+          <li><a href="#">Copyright</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Social</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="IG" /></a>
+        </div>
+        <div class="store-icons">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "vishalp" && password === "yadav") {
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid credentials. Try again.");
+      }
+    }
+  </script>
+</body>
+</html>
